@@ -1,19 +1,27 @@
 <?php
 namespace App\Controllers;
-class StudentController
+require_once '../app/core/controllers.php';
+
+use App\Core\controllers;
+class StudentController extends controllers
 {
     public function index()
     {
-        require_once '../app/views/students/index.php';
+        $this->view('students.index');
     }
 
     public function create()
     {
-        require_once '../app/views/students/create.php';
+        $this->view('students.create');
     }
 
 public function show(string $id)
     {
-        require_once '../app/views/students/show.php';
+        $this->view('students.show', ['id' => $id]);
+    }
+public function edit(string $id)
+    {
+        $this->view('students.edit', ['id' => $id]);
+        // Implementasi untuk menampilkan form edit siswa
     }
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Siswa</title>
+    <title>edit Siswa</title>
     <link rel="stylesheet" href="/css/output.css">
 </head>
 <body class="min-h-screen flex flex-col bg-gray-100">
     <header class="bg-blue-500 text-white">
         <div class="flex items-center justify-between container mx-auto p-4">
             <a href="/students" class="font-bold text-xl">Sistem Sekolah</a>
-            <a href="/students/create" class="bg-white text-blue-500 px-4 py-2 rounded-lg">+ Tambah Siswa</a>
+            <a href="/students/create" class="bg-white text-blue-500 px-4 py-2 rounded-lg">+ edit Siswa</a>
         </div>
     </header>
  
@@ -18,18 +18,18 @@
         <div class="mt-8 space-y-4">
             <!--Card header start-->
             <div class="bg-white shadow rounded-lg p-4">
-                <h1 class="text-2xl font-bold">Detail Siswa</h1>
-                <p>Menampilkan detail siswa yang terdaftar.</p>
+                <h1 class="text-2xl font-bold">edit Siswa</h1>
+                <p>halaman edit siswa</p>
             </div>
             <!--Card header end-->
  
             <!--Card content start-->
             <div class="bg-white shadow rounded-lg">
  
-               <div  class="p-4 grid grid-cols-2 gap-4">
+               <form action="" class="p-4 grid grid-cols-2 gap-4">
                     <div class="space-y-2">
                     <label for="name" class="block font-bold ">Nama</label>
-                    <input type="text" name="name" readonly id="name" readonly placeholder="Masukkan nama" readonly class="w-full border rounded-lg py-2 px-4">
+                    <input type="text" name="name" id="name" placeholder="Masukkan nama" class="w-full border rounded-lg py-2 px-4">
                 </div>
                     <div class="space-y-2">
                     <label for="nis" class="block font-bold ">Nis</label>
@@ -45,8 +45,9 @@
                 </div>
                 <div class="flex justify-end gap-4 col-span-2">
                     <a href="/students" class="bg-gray-500 text-white px-4 py-2 rounded-lg">Kembali</a>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Simpan</button>
                 </div>
-               </div>
+               </form>
  
             </div>
             <!--Card content end-->
