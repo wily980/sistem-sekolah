@@ -43,6 +43,10 @@
                     <label for="phone-number" class="block font-bold ">No Telepon</label>
                     <input type="text" name="phone_number" id="phone_number" placeholder="Masukkan no telepon" class="w-full border rounded-lg py-2 px-4">
                 </div>
+                <div class="flex justify-end gap-4 col-span-2">
+                    <a href="/students" class="bg-gray-500 text-white px-4 py-2 rounded-lg">Kembali</a>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Simpan</button>
+                </div>
                </form>
  
             </div>
