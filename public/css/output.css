@@ -24,7 +24,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
-    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
