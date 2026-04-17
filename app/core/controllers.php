@@ -5,6 +5,7 @@ class controllers
 {
     public function view(string $view, array $data = [])
     {
+        extract($data);
         $view = str_replace(
             '.', '/', $view
             );
