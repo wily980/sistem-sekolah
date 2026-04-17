@@ -21,7 +21,7 @@
                   <tbody>
                     <?php foreach($students as $index => $student): ?>
                       <tr>
-                      <td class="py-2 px-4 text-left"><?php $index + 1; ?></td>
+                      <td class="py-2 px-4 text-left"><?= $index + 1; ?></td>
                       <td class="py-2 px-4 text-left"><?= $student['name'] ?></td>
                       <td class="py-2 px-4 text-left"><?= $student['nis'] ?></td>
                       <td class="py-2 px-4 text-left"><?= $student['class'] ?></td>

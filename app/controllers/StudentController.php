@@ -25,7 +25,10 @@ class StudentController extends controllers
 
 public function show(string $id)
     {
-        $this->view('students.show', ['id' => $id]);
+        $id = intval ($id);
+        $studentModel = new Student();
+        $student = $studentModel->getStudent($id);
+        $this->view('students.show', ['student' => $student]);
     }
 public function edit(string $id)
     {
